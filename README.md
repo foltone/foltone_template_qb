@@ -1,7 +1,7 @@
 # foltone_template_qb
 
 ## Description
-Voici un base template pour le framework Fivem QBCore.
+Voici une base template pour le framework Fivem QBCore.
 
 ## Installation
 - Importer le fichier SQL dans votre base de donnée
