@@ -1,0 +1,57 @@
+endpoint_add_tcp "0.0.0.0:30120"
+endpoint_add_udp "0.0.0.0:30120"
+
+sv_endpointPrivacy true
+
+sv_hostname "Base Template foltone"
+set steam_webApiKey ""
+sv_licenseKey 
+sv_maxclients 10
+
+sets sv_projectName "Template foltone qb"
+sets tags "dev, foltone, template"
+sets locale "fr-FR"
+setr sv_type "DEV"
+sets discord " https://discord.com/invite/X9ReemrhKh"
+sets crédit "Base Développé par foltone"
+
+sv_scriptHookAllowed 0
+set onesync on
+# si vous n'arrivez pas à lier votre bdd regarder ici
+# if you can't link your database look here
+# https://overextended.dev/oxmysql#configure-your-server
+# set mysql_connection_string "mysql://root:12345@localhost:3306/foltone_template"
+set mysql_connection_string "server=localhost;database=foltone_qb;userid=root;password=root"
+
+set mysql_ui true
+
+sv_enforceGamebuild 3095
+
+setr qb_locale "fr"
+
+################## FIVEM DEFAULT #################
+ensure chat
+ensure spawnmanager
+ensure sessionmanager
+ensure hardcap
+ensure chat-theme-gtao
+
+add_ace group.admin command allow # allow all commands
+#add_principal identifier.{{principalMasterIdentifier}} qbcore.god <- doesn't exist yet, change the generated one below to qbcore.god
+
+# Resources
+add_ace resource.qb-core command allow # Allow qb-core to execute commands
+
+# Gods
+add_ace qbcore.god command allow # Allow all commands
+
+# Inheritance
+add_principal qbcore.god group.admin # Allow gods access to the main admin group used to get all default permissions
+add_principal qbcore.god qbcore.admin # Allow gods access to admin commands
+add_principal qbcore.admin qbcore.mod # Allow admins access to mod commands
+
+ensure oxmysql
+ensure bob74_ipl
+ensure PolyZone
+ensure qb-core
+ensure [QB]
