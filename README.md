@@ -2,6 +2,7 @@
 
 ## Description
 Voici une base template pour le framework Fivem QBCore.
+Je précise que je n'ai rien codé moi-même, mais ce pack est pratique si vous souhaitez configurer rapidement un serveur sous QB.
 
 ## Installation
 - Importer le fichier SQL dans votre base de donnée
