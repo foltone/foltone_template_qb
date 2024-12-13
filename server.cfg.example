@@ -30,10 +30,13 @@ sv_enforceGamebuild 3095
 setr qb_locale "fr"
 
 ################## FIVEM DEFAULT #################
+ensure mapmanager
 ensure chat
 ensure spawnmanager
 ensure sessionmanager
+ensure basic-gamemode
 ensure hardcap
+ensure baseevents
 ensure chat-theme-gtao
 
 add_ace group.admin command allow # allow all commands
